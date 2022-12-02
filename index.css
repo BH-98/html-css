@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+    text-align: center;
+    padding: 25px 0px;
+}
+#about {
+    margin: 10px 25px;
+}
+
+#about p {
+    margin-top: 10px;
+}
+
+li {
+
+}
+img {
+    text-align: center;
+}
+.navbar {
+    background-color: gray;
+    list-style-type: none;
+    margin: 10px 25px;
+}
+.navbar li {
+    color: white;
+    padding: 15px 20px;
+    border-right: 1px white solid;
+    width: 100px;
+    display: inline-block;
+}
+#people {
+    margin: 10px 25px;
+    list-style-type: none;
+}
+
+#places {
+    margin: 10px 25px;   
+}
+
+#people li{
+    width: 100%;
+    background-color: lightgray;
+}
+#people li button{
+    width: 100%;
+    border: none;
+    background-color: lightgray;
+}
+   
+#places li {
+   margin: 10px 25px;   
+}
+
+.dropdown-hide {
+    display: none;
+}
+
+.dropdown-show {
+    display: block;
+    background-color: white;
+}

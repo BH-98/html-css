@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Túrin</title>
+    <script>
+        function openAccordian(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("-hide") !== -1) {
+                x.className = x.className.replace("-hide", "-show")
+            } else { 
+            x.className = x.className.replace("-show", "-hide");
+            }
+        }
+    </script>
 </head>
 <body>
     <h1>Túrin Turambar</h1>
-    <ul>
+    <ul class="navbar">
         <li><a href="#about">About</a></li>
         <li><a href="#people">People</a></li>
         <li><a href="#places">Places</a></li>
@@ -23,22 +34,56 @@
         <p>Upon arrival in Dor-Lomin, Turin discovered that his homelands were taken over and his people enslaved by the easterlings, men who joined forces with Morgoth. He also discovered that his mother and sister had fled to Doriath. Turin, next travlled to Brethil in search of the elven maiden Finduilas whom he loved and had been captured in the sack of Nargothrond. To his gried however, he learnt that she had been slain by her captors in an attempted rescued by the men of Brethil. He remained here, fighting now with a spear and bow rather than the black sword.</p>
         <p>When his mother and sister learnt of the destruction of Nargothrond, they left Doriath in search of him. During this quest, Nienor came face-to-face with Glaurung who clouded here mind and she forgot everything, even here own name. By chance, she came towards Brethil where she was found in the wild by Turin who brought her home and took care of her. Unknowing her true identity, Nienor was called Niniel and married Turin.</p>
         <p> When it came that Glaurung left Nargothrond, Turin and two willing companions set out to meet the dragons path and slay him. Only Turin made it to the dragon, where he stabbed into his stomach with the black sword and poisonous blood flooded from the wyrms body as he died. Turin was knoacked unconcious by the poison, and was seemingly dead. In this time, Niniel had followed Turin and found her beloved dead by the dragons body, who spoke to her and released his spell, bringing back all of her memory and in turn she threw herself from the cliff edge into the deadly waters below and was never seen again. Upon awakening, Turin returned towards Brethil where he met Brandir who told him what had happend and in his anger Turin slew him. Turin then case him self upon Gurthang and requested of the blade that it take his life, the sword killed its master and broke beneath his body.</p>
+        <img src="https://th.bing.com/th/id/R.f1a55160a5265a6cde66e59f5580fe05?rik=gcRT481CnIAEOg&riu=http%3a%2f%2fwww.thewhitetree.org%2fwp-content%2fuploads%2f2015%2f12%2fTurin-Turambar.jpg&ehk=GTsTERsFNGQ3Ag7o6vwI%2f6iCwsfrQXLjtvsk7qjm038%3d&risl=&pid=ImgRaw&r=0" alt="Image of Turin wearing the dragon helm">
     </section>
     <section id="people">
-        <h2>Important People</h2> 
+        <h2></h2> 
         <ul>
-            <li><a href="https://en.wikipedia.org/wiki/H%C3%BArin" target="blank">Hurin</a></li>
-            <li>Morwen</li>
-            <li>Lalieth</li>
-            <li>Nienor Niniel</li>
-            <li><a href="https://en.wikipedia.org/wiki/Thingol">Thingol</a></li>
-            <li>Melian</li>
-            <li>Beleg</li>
-            <li>Gwindor</li>
-            <li>Mim</li>
-            <li>Finduilas</li>
-            <li>Glaurung</li>
-            <li>Brandir</li>
+            <li><button onclick="openAccordian('hurin')" class="accordian">Hurin</a>
+                <div id="hurin" class="dropdown-hide">
+                    <P><a href="https://en.wikipedia.org/wiki/H%C3%BArin" target="blank">Hurin</a>, Lord of the house of Hador was the father of Turin. He was captured by orcs during the battle of unnumbered tears, surrounded by the bodies of his allies and enemies alike. Morgoth cursed Hurin and all of his house, only releasing him after the death of his children.</P>
+                </div>
+            </li>
+            <li><button onclick="openAccordian('morwen')" class="accordian">Morwen</a>
+                <div id="morwen" class="dropdown-hide">
+                    <p>Mother of Turin and wife of Hurin. She died of grief by the grave of her children in the arms of Hurin.</p>
+                </div>
+            </li>
+            <li><button onclick="openAccordian('nienor')" class="accordian">Nienor Niniel</a>
+                <div id="nienor" class="dropdown-hide">
+                    <p>Sister of Turin, she was cursed by the dragon, Glaurung and lost her memory before meeting Turin in Brethil and marrying him.</p>
+                </div>
+            </li>
+            <li><button onclick="openAccordian('thingol')" class="accordian">Thingol</a>
+                <div id="thingol" class="dropdown-hide">
+                    <p>Elven king of Doriath, he</p>
+                </div>
+            </li>
+            <li><button onclick="openAccordian('melian')" class="accordian">Melian</a>
+                <div id="melian" class="dropdown-hide">
+                    <p>Melian was a Maiar and wife to Thingol. She protected the kindgom of Doriath from Morgoth by creating the Girdle of Melian which caused confusion in those who entered the woods. She left middle earth after the death of her husband, leading to the destruction of the kingdom by the enemy.</p>
+                </div>
+            </li>
+            <li><button onclick="openAccordian('beleg')" class="accordian">Beleg</a>
+                <div id="beleg" class="dropdown-hide">
+                    <p>Nicknamed Beleg the Strongbow, he was the leader of the armies of Doriath and friend to Turin. He was given leave by King Thingol to search for Turin in his exile, leading to his own death upon the black sword.</p>
+                </div>
+            </li>
+            <li><button onclick="openAccordian('gwindor')" class="accordian">Gwindor</a>
+                <div id="gwindor" class="dropdown-hide">
+                    <p>An elf of Nargothrond, captured by Morgoth. He was found by Beleg after his escape and later joined Turin as they travelled to his homeland.</p>
+                </div>
+            </li>
+            <li><button onclick="openAccordian('mim')" class="accordian">Mim</a>
+                <div id="mim" class="dropdown-hide">
+                    <p>Mim was a petty dwarf who abode in Amon Rhun, he allowed Turins band of outlaws to live with him in exchange for his safety until he betrayed them to their death.</p>
+                </div>
+            </li>
+            <li><button onclick="openAccordian('finduilas')" class="accordian">Finduilas</a>
+                <div id="finduilas" class="dropdown-hide">
+                    <p>Elven maiden of Nargothrond.</p>
+                </div>
+            </li>
         </ul>
     </section>
     <Section id="places">
